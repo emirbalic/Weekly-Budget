@@ -1,0 +1,18 @@
+trackBudget(amount) {
+
+        const budgetLeftDollars = budget.substractFromBudget(amount);
+
+        budgetLeft.innerHTML = `${budgetLeftDollars}`;
+        // toClear = document.querySelector('#form-group');
+        // toClear.reset();
+        if (budget.budgetLeft <= (budget.budget * 0.75) && budget.budgetLeft >= (budget.budget / 2)) {
+            console.log('more' + budgetLeftDollars);
+        } else if (budget.budgetLeft <= (budget.budget / 2) && (budget.budget / 4) >= budget.budgetLeft) {
+            console.log('tanko');
+        }
+        else if ((budget.budget / 4) <= budget.budgetLeft) {
+            console.log('volko' + budget.budgetLeft);
+        }
+        //valuesForms.reset();
+
+        // iit mihg look as i f i am writing a cose but I don t' really know
